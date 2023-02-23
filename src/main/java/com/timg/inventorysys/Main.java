@@ -48,6 +48,11 @@ public class Main {
 			item_repo.save(item);
 	}
 
+	@DeleteMapping ("{item_id}")
+	public void deleteitem(@PathVariable ("item_id") Integer item_id){
+		item_repo.deleteById(item_id);
+	}
+
 }
 
 
